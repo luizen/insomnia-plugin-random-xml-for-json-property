@@ -1,10 +1,10 @@
 # Insomnia Plugin: Random XML for JSON Property
 
-This Insomnia plugin generates simple, valid pseudo-random XML samples that are ready to be used inside JSON properties. The generated XML is compact and properly escaped to ensure compatibility with JSON parsers.
+This Insomnia plugin generates extremely simple, dummy and valid pseudo-random XML samples that are ready to be used inside JSON properties. The generated XML is compact and properly escaped to ensure compatibility with JSON parsers.
 
 ## Features
 
-- Generate pseudo-random XML with customizable root elements and child elements.
+- Generate pseudo-random XML with customizable root element and child elements.
 - Ensures all double quotes are escaped for JSON compatibility.
 - Compact XML format without unnecessary newlines.
 - Real-world-like XML element names for better usability.
@@ -22,11 +22,27 @@ This Insomnia plugin generates simple, valid pseudo-random XML samples that are 
 3. Configure the root element name and the number of child elements.
 4. The plugin will generate a random XML string, escaped and ready to be used in JSON properties.
 
-## Example Output
+## Example
+
+![alt text](img-example.png)
+
+Input:
 
 ```json
 {
-  "XmlContents": "<root><name>SampleValue1</name><email>SampleValue2</email><phone>SampleValue3</phone></root>"
+  "Date": "{% faker 'randomDatePast' %}",
+  "MessageType": "{% faker 'randomTransactionType' %}",
+  "XmlContent": "{% randomXmlForJson 'root', 3 %}"
+}
+```
+
+Output:
+
+```json
+{
+  "date": "2024-09-03T23:36:11.868Z",
+  "messageType": "withdrawal",
+  "xmlContent": "<root><address>SampleValue1</address><date>SampleValue2</date><status>SampleValue3</status></root>"
 }
 ```
 
