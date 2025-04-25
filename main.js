@@ -1,5 +1,6 @@
 function generateRandomXml({ rootElement, childCount }) {
-    let xml = `<${rootElement}>`;
+    let xml = `<?xml version=\"1.0\" encoding=\"UTF-8\"?>`;
+    xml += `<${rootElement}>`;
     const usedElements = new Set();
 
     for (let i = 0; i < childCount; i++) {
@@ -18,7 +19,9 @@ function generateRandomXml({ rootElement, childCount }) {
 
 const sampleElements = [
     'name', 'email', 'phone', 'address', 'city', 'state', 'country', 'zip', 'company', 'position',
-    'department', 'website', 'note', 'date', 'time', 'price', 'quantity', 'description', 'status'
+    'department', 'website', 'note', 'date', 'time', 'price', 'quantity', 'description', 'status',
+    'order', 'product', 'category', 'user', 'profile', 'settings', 'preferences', 'feedback', 'rating', 'review',
+    'transaction', 'payment', 'invoice', 'receipt', 'shipment', 'tracking', 'notification', 'alert', 'message', 'comment'
 ];
 
 function getRandomElement() {
@@ -39,7 +42,7 @@ module.exports.templateTags = [
             {
                 displayName: 'Number of Child Elements',
                 type: 'number',
-                defaultValue: 3,
+                defaultValue: 5,
             },
         ],
         async run(context, rootElement, childCount) {
