@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 952 398" fill="none">
+    <!-- Background -->
+    <rect width="952" height="398" fill="#F5F5F5" />
+
+    <!-- JSON Document -->
+    <text x="50" y="100" font-size="20" font-family="Courier New" fill="#4CAF50">{</text>
+    <text x="70" y="140" font-size="20" font-family="Courier New" fill="#000000">"XmlContents":
+        "&lt;note&gt;\n</text>
+    <text x="90" y="180" font-size="20" font-family="Courier New" fill="#000000">
+        &lt;to&gt;User&lt;/to&gt;\n</text>
+    <text x="90" y="220" font-size="20" font-family="Courier New" fill="#000000">
+        &lt;from&gt;AI&lt;/from&gt;\n</text>
+    <text x="90" y="260" font-size="20" font-family="Courier New" fill="#000000">
+        &lt;message&gt;Hello&lt;/message&gt;\n</text>
+    <text x="70" y="300" font-size="20" font-family="Courier New" fill="#000000">"}"</text>
+    <text x="50" y="340" font-size="20" font-family="Courier New" fill="#4CAF50">}</text>
+</svg>

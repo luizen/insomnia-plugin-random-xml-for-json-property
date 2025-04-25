@@ -1,0 +1,19 @@
+{
+  "name": "insomnia-plugin-random-xml-for-json-property",
+  "version": "0.0.1",
+  "private": true,
+  "insomnia": {
+    "name": "random-xml-for-json-property",
+    "displayName": "Random XML for JSON property",
+    "description": "Generates random XML examples to be used in JSON properties",
+    "images": {
+      "icon": "icon.svg",
+      "cover": "cover.svg"
+    }
+  },
+  "publisher": {
+    "name": "Luiz Fernando Zen",
+    "icon": "icon.svg"
+  },
+  "main": "main.js"
+}
