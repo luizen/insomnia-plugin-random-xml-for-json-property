@@ -52,8 +52,7 @@ module.exports.templateTags = [
                 childCount,
             });
 
-            // Escape double quotes for JSON compatibility
-            return xml.replace(/"/g, '\\"');
+			return JSON.stringify(xml);
         },
     },
 ];
